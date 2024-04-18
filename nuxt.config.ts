@@ -3,8 +3,6 @@ import { repositoryName } from './slicemachine.config.json'
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  devtools: true,
-
   app: {
     head: {
       title: 'Prismic + Nuxt multi-page example',
@@ -38,7 +36,7 @@ export default defineNuxtConfig({
   ],
 
   prismic: {
-    endpoint: 'omagh-air-con',
+    endpoint: repositoryName,
     preview: '/api/preview',
     clientConfig: {
       routes: [
